@@ -18,10 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUc-OP-L45">
-                                <rect key="frame" x="131" y="438" width="152" height="30"/>
-                                <state key="normal" title="Button with hello label"/>
+                                <rect key="frame" x="112.5" y="433" width="189" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Hello Testwarez 👋"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qxw-5H-qim"/>
+                                    <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyF-KB-srl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA0-Nu-MKY">
+                                <rect key="frame" x="165" y="804" width="84" height="30"/>
+                                <state key="normal" title="testwarez.pl"/>
+                                <connections>
+                                    <action selector="displayWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGN-mZ-krU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -29,12 +37,11 @@
                         <constraints>
                             <constraint firstItem="PUc-OP-L45" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="LMr-gQ-ZFE"/>
                             <constraint firstItem="PUc-OP-L45" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N5R-CS-0aa"/>
+                            <constraint firstItem="jA0-Nu-MKY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cTz-xZ-3K7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jA0-Nu-MKY" secondAttribute="bottom" constant="28" id="ygj-i0-sUG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="PUc-OP-L45" id="gx3-YL-ZfT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
